@@ -1,0 +1,21 @@
+### GET 
+GET http://localhost:3001/api/users HTTP/1.1
+
+### GET 
+GET http://localhost:3001/api/users/1 HTTP/1.1
+
+### POST 
+POST http://localhost:3001/api/users HTTP/1.1 
+content-type: application/json
+
+{
+"name": "novo usuario",
+"email": "novousuario@teste.com"
+}
+
+### PUT PUT http://localhost:3001/api/users/3 HTTP/1.1 
+content-type: application/json
+
+{
+"nome": "nome alterado"
+}

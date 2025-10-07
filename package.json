@@ -1,28 +1,26 @@
 {
-  "name": "site-devops-backend",
+  "name": "backend-devops",
   "version": "1.0.0",
-  "description": "Backend do site sobre emissão de CO2, feito para a matéria de DevOps Frontend no terceiro semestre",
   "main": "index.js",
-  "scripts": {
-    "dev": "ts-node-dev --respawn src/server.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cavichia-D-Santos/site-devops-backend.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Cavichia-D-Santos/site-devops-backend/issues"
-  },
-  "homepage": "https://github.com/Cavichia-D-Santos/site-devops-backend#readme",
+  "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.7.0",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
   }
